@@ -137,6 +137,18 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+#configurações de e-mail
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+"""
+no deploy: 
+EMAIL_HOST = 'localhost'
+EMAIL_HOST_USER = 'no-reply@kwpsolucoes.com.br'
+EMAIL_PORT = 587
+EMAIL_USER_TSL = True
+EMAIL_HOST_PASSWORD = <dua senha>
+"""
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
